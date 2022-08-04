@@ -1,0 +1,6 @@
+env
+.env
+env_2
+.vscode/
+node_modules
+scripts/__pycache__/
