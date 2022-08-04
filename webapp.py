@@ -16,7 +16,7 @@ def home():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
 
-	try:
+	# try:
 
 		#request args
 		Gender = request.args.get('Gender')
@@ -55,8 +55,8 @@ def predict():
 		#make prediction
 		pred = model.predict([[Gender,Married,Dependents,Graduate,Self_Employed,Income,Property_Area, Prev_Credit_Dur,Total_Amount_Spent,Credit_History]]).tolist()
 		return(jsonify(prediction=pred))
-	except:
-		return {"message":"ERROR!"}, 400
+	# except:
+	# 	return {"message":"ERROR!"}, 400
 
 if __name__=="__main__":
 	#debug=False for production use
