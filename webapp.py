@@ -32,7 +32,7 @@ def predict():
 			Property_Area ='Semiurban'
 		else: 
 			Property_Area ='Rural'	
-		Prev_Credit_Dur = request.args.get('Prev_Credit_Duration')
+		Prev_Credit_Dur = 18 #request.args.get('Prev_Credit_Duration')
 		Total_Amount_Spent = request.args.get('Total_Amount_Spent')
 		Credit_History = request.args.get('Credit_History')
 		# if hist in ['Yes']:
